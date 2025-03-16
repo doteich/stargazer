@@ -1,0 +1,46 @@
+{
+    "resource_structures": [
+        {
+            "name": "Titanium Mine",
+            "description": "Titanium mines are used to extract titanium from the ground.",
+            "costs": {
+                "titanium": 100,
+                "lithium": 50,
+                "helium": 0
+            },
+            "requirements": {
+                "tech_level_defense": 1,
+                "tech_level_economy": 1,
+                "tech_level_fleet": 1
+            }
+        },
+        {
+            "name": "Lithium Extractor",
+            "description": "Lithium extractors are used to extract lithium from the ground.",
+            "costs": {
+                "titanium": 300,
+                "lithium": 0,
+                "helium": 0
+            },
+            "requirements": {
+                "tech_level_defense": 1,
+                "tech_level_economy": 1,
+                "tech_level_fleet": 1
+            }
+        },
+        {
+            "name": "Gas Refinement Station",
+            "description": "Gas refinement stations are used to extract helium from the atmosphere.",
+            "costs": {
+                "titanium": 100,
+                "lithium": 700,
+                "helium": 0
+            },
+            "requirements": {
+                "tech_level_defense": 1,
+                "tech_level_economy": 1,
+                "tech_level_fleet": 1
+            }
+        }
+    ]
+}

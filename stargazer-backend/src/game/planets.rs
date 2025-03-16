@@ -83,3 +83,9 @@ pub fn generate_planets(conf: &PlanetConfig, id: u32) -> Planet {
         planet_id: id,
     }
 }
+
+pub fn init_from_file(file: &str) -> Result<Vec<PlanetConfig>, Box<dyn std::error::Error>> {
+    let file = std::fs::read_to_string(file)?;
+    let planets: Vec<PlanetConfig> = serde_json::from_str(&file)?;
+    Ok(planets)
+}
